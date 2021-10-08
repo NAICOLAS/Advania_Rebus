@@ -102,7 +102,7 @@ namespace Advania_Rebus // A bit over-engineered just for the fun of it, and to 
                 }
             }
 
-            static bool IsNullOrWhiteSpace(string Url)
+            static bool IsNotNullOrWhiteSpace(string Url) // Check if Url is null or empty/whitespace. 10 out of 10. ^^
             {
                 if (!string.IsNullOrWhiteSpace(Url)) 
                 {
@@ -113,7 +113,7 @@ namespace Advania_Rebus // A bit over-engineered just for the fun of it, and to 
 
             static void NavigateTo(string Url)
             {
-                if (IsNullOrWhiteSpace(Url)) // Checks if the variable Url from the constructor is NullOrWhiteSpace.
+                if (IsNotNullOrWhiteSpace(Url)) // Checks if the variable Url from the constructor is NullOrWhiteSpace.
                 {
                     try
                     {
